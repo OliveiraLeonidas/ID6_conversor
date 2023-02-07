@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+    <title>Conversor de moedas</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="logo da Aluraflix">
+      <h1 class="page-title">
+        Conversor de moedas - R$
+      </h1>
+    </div>
+    
+    <div class="formulario">
+      <div id="moeda">
+        <h5 for="" class="block">Moeda atual</h5>
+        
+        <select name="moedas" id="moedaEscolhida" class="block">
+          <option value="dolar">Dólar - US$</option>
+          <option value="euro">Euro</option>
+          <option value="pesoMexicano">Peso Mexicano</option>
+          <option value="iene">Iene</option>
+        </select>
+        
+        <h5 for="" class="block">Digite o valor: </h5>
+          <input type="number" id="valorMonetario" class="block">
+          <button id="button" onclick="converteParaReal()" type="submit" class="block">Converter</button>
+        <div class="block">
+          <h5 class="block">Valor convertido</h5>
+          <span id="valorConvertido" class="teste"></span>
+        </div>
+        </div>
+        
+      </div>
+      
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      </a>
+    </body>
+    </html>
